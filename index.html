@@ -64,12 +64,10 @@
           <div class="about-col-2">
             <h1 class="sub-title">About me</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus
-              maiores ipsa facilis modi asperiores, consequuntur similique
-              cumque repud, consequatur quo recusandae at porro praesentium
-              dolorem, blanditiis doloremque alias eos tenetur cum! Laudantium
-              eum nam consequatur exercitationem. Libero sit totam laudantium
-              temporibus culpa fuga officia alias!
+              Hi! I am Shrey Jain, a second-year Btech student at the School of
+              Electrical Sciences, IIT Bhubaneswar. I am from Sagar, Madhya
+              Pradesh. I am a web-dev enthusiast and also do competitive
+              programming. Here are some of my details.
             </p>
 
             <div class="tab-titles">
@@ -201,20 +199,23 @@
       }
     </script>
     <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbytbc0H0k-KIx83Plrzzp10BO-Qyyu3_vz_8Vpu_ZlkufzTpAaWb53-y52TRA6dbIcC/exec'
-      const form = document.forms['submit-to-google-sheet']
-      const msg= document.getElementById("msg")
-    
-      form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response => {msg.innerHTML="Submitted suceesfully"
-          setTimeout(function(){
-            msg.innerHTML=""
-          },2000)
-        form.reset() })
-          .catch(error => console.error('Error!', error.message))
-      })
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbytbc0H0k-KIx83Plrzzp10BO-Qyyu3_vz_8Vpu_ZlkufzTpAaWb53-y52TRA6dbIcC/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Submitted suceesfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
     </script>
   </body>
 </html>
