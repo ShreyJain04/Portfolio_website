@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shrey Jain</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=PT+Serif:wght@700&family=Playfair+Display:ital,wght@0,600;1,400&family=REM:ital,wght@1,300&family=Source+Sans+3:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/LOGO-SHREY.jpg" class="logo" alt="Shrey" />
+          <ul>
+            <li>
+              <a href="#header">
+                <img src="images/house-solid.svg" class="icons" />Home</a
+              >
+            </li>
+            <li>
+              <a href="#about"
+                ><img src="images/user-solid.svg" class="icons" />About</a
+              >
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="images/address-card-regular.svg"
+                  class="icons"
+                />Portfolio</a
+              >
+            </li>
+            <li>
+              <a href="#contact"
+                ><img src="images/phone-solid.svg" class="icons" />Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <h1>
+            Hi! I'm <span>Shrey Jain</span><br />
+            Second year Student from <br />Electrical Engineering department
+            <br />
+            IIT Bhubaneswar
+          </h1>
+          <img src="images/shrey1.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- about -->
+    <div id="about">
+      <div class="container2">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/iit_logo.png" class="img2" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About me</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus
+              maiores ipsa facilis modi asperiores, consequuntur similique
+              cumque repud, consequatur quo recusandae at porro praesentium
+              dolorem, blanditiis doloremque alias eos tenetur cum! Laudantium
+              eum nam consequatur exercitationem. Libero sit totam laudantium
+              temporibus culpa fuga officia alias!
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Programming</span><br />C,C++</li>
+                <li><span>Web development</span><br />Front-end developer</li>
+                <li><span>Engineering</span><br />Electrical Engineering</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>WebnD</span><br />
+                  <img src="images/webd.png" class="society" /><br />Member of
+                  The Web and Design society of IIT Bhubaneswar
+                </li>
+                <li>
+                  <span>FEBS</span><br />
+                  <img src="images/febslogo.webp" class="society" /><br />Member
+                  of The Finance, Economics and Business Society of IIT
+                  Bhubaneswar
+                </li>
+                <li>
+                  <span>CST</span><br />
+                  <img src="images/cst.jpg" class="society" /><br />Student
+                  Guide at Counselling and Service Team IIT Bhubaneswar
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>Christ Convent School, Rehli, Sagar, M.P.</span><br />
+                  Studied till class 10th (95%)
+                </li>
+                <li>
+                  <span>Emmanuel English Medium HR School, Sagar, M.P.</span
+                  ><br />Class 11th and 12th (96.6%)
+                </li>
+                <li>
+                  <span>Indian Insitute of Technology Bhubaneswar</span
+                  ><br />2nd year Student of Electrical Engineering department
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contact -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <img
+                src="images/envelope-regular.svg"
+                class="icons"
+              />jainshrey200349@gmail.com
+            </p>
+            <p>
+              <img src="images/phone-solid.svg" class="icons" />91-9301262855
+            </p>
+            <div class="social-icons">
+              <a href="https://www.instagram.com/shrey_jain49/"
+                ><img src="images/instagram.svg" alt=""
+              /></a>
+              <a href=""><img src="images/github.svg" alt="" /></a>
+              <a
+                href="https://www.linkedin.com/in/shrey-jain-b8834624b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                ><img src="images/linkedin.svg" alt=""
+              /></a>
+            </div>
+            <a href="#" class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form action="">
+              <input type="text" name="name" placeholder="Your Name" />
+              <input type="email" name="email" placeholder="Your email" />
+              <textarea
+                name="message"
+                rows="4"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <div class="copyright">
+        <p>
+          <img
+            src="images/copyright-solid.svg"
+            class="copyright-icon"
+          />copyright @Shrey_Jain_2003 www.ShreyPortFolio.com
+        </p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+  </body>
+</html>
