@@ -245,6 +245,11 @@ form .btn{
     margin-top: 10px;
     cursor: pointer;
 }
+#msg{
+    color: #B6BBC4;
+    margin-top: -30px;
+    display: block;
+}
 
 .copyright{
     width: 100%;
