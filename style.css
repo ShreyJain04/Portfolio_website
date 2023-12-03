@@ -246,7 +246,7 @@ form .btn{
     cursor: pointer;
 }
 #msg{
-    color: #B6BBC4;
+    color: #527853;
     margin-top: -30px;
     display: block;
 }
@@ -269,7 +269,3 @@ form .btn{
     margin-right: 8px;
 }
 
-/* css for small screen */
-@media only screen and (max-width:600px) {
-
-}
